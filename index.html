@@ -43,8 +43,8 @@
 			vertical-align: top;
 		}
 
-		p{
-			display: block!important;
+		p {
+			display: block !important;
 		}
 
 		/* -------------------------------------
@@ -55,7 +55,7 @@
 			background-color: #f6f6f6;
 			width: 100% !important;
 		}
-		
+
 
 		/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
 		.container {
@@ -410,50 +410,64 @@
 			}
 		}
 
-		 table[class=body] td.two-columns{
-            font-size:0 !important;
-        }
-        .two-columns .column {
-            max-width: 100% !important;
-        }
-        @media only screen and (max-width:450px) {
-            .two-columns .column {
-                max-width: 100%!important;
-                text-align: center !important;
-				padding-left: 0!important;
-				padding-right: 0!important;
-            }
-
-			.context{padding-right: 10px!important;}
-        }
-
-        @media screen and (min-width:451px) and (max-width:635px) {
-            .two-columns .column {
-                max-width: 100%!important;
-            }
-        } 
-
 		table[class=body] td.two-columns {
 			font-size: 0 !important;
 		}
 
-		 .two-columns .column {
-			 box-sizing: border-box;
-			max-width: 50% !important;
+		.two-columns .column {
+			max-width: 100% !important;
 		}
 
 		@media only screen and (max-width:450px) {
 			.two-columns .column {
 				max-width: 100% !important;
 				text-align: center !important;
+				padding-left: 0 !important;
+				padding-right: 0 !important;
+			}
+
+			.context {
+				padding-right: 10px !important;
 			}
 		}
 
 		@media screen and (min-width:451px) and (max-width:635px) {
 			.two-columns .column {
+				max-width: 100% !important;
+			}
+		}
+
+		table[class=body] td.two-columns {
+			font-size: 0 !important;
+		}
+
+		.two-columns .column {
+			box-sizing: border-box;
+			max-width: 293px !important;
+		}
+
+		.two-columns .column-min {
+			box-sizing: border-box;
+			max-width: 276px !important;
+		}
+
+		.two-columns .column-exta-min {
+			box-sizing: border-box;
+			max-width: 267px !important;
+		}
+
+		@media only screen and (max-width:500px) {
+			.two-columns .column {
+				max-width: 100% !important;
+				text-align: center !important;
+			}
+		}
+
+		@media screen and (min-width:500px) and (max-width:635px) {
+			.two-columns .column {
 				max-width: 50% !important;
 			}
-		} 
+		}
 	</style>
 </head>
 
@@ -464,10 +478,12 @@
 		<tr>
 			<td class="container"
 				style="padding: 0;font-family: sans-serif;font-size: 14px;vertical-align: top;display: block;max-width: 600px;width: 100%;margin: 0 auto !important;">
-				<div class="content" style="box-sizing: border-box;display: block;margin: 0 auto;max-width: 600px;">
-					<span class="header-header" style="display: block;text-align: center;margin: 0;">
-						<a target="_blank"
-							href="#" style="color: #0065b5;text-decoration: underline;"><img
+				<div class="content"
+					style="box-sizing: border-box;display: block;margin: 0 auto;max-width: 600px;">
+					<span class="header-header"
+						style="display: block;text-align: center;margin: 0;">
+						<a target="_blank" href="#"
+							style="color: #0065b5;text-decoration: underline;"><img
 								src="https://smmagnat.ru/email-images/header.png"
 								style="border: none;-ms-interpolation-mode: bicubic;max-width: 100%;display: block;"></a></span>
 
@@ -480,7 +496,7 @@
 						<!-- START MAIN CONTENT AREA -->
 						<tr>
 							<td class="wrapper"
-								style="padding: 34px 4px 45px;font-family: sans-serif;font-size: 14px;vertical-align: top;box-sizing: border-box;"
+								style="padding: 34px 4px 45px;font-family: sans-serif;font-size: 14px;vertical-align: top;box-sizing: border-box;max-width: 600px;"
 								bgcolor="#ffffff">
 								<table border="0" cellpadding="0" cellspacing="0"
 									style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;border-spacing: 0;border: none;">
@@ -490,14 +506,18 @@
 											<p
 												style="color: #000000;font-family: sans-serif;font-size: 12px;font-weight: 400;margin: 0;margin-bottom: 20px; text-align: center;">
 												Мы обновили весь tutor!</p>
-											
+
 											<p
 												style="color: #000000;font-family: sans-serif;font-size: 12px;font-weight: 400;margin: 0;margin-bottom: 28px; text-align: center;">
-												А ещё мы запустили платформу для наших <br> курсов. Теперь все уроки и домашки будут <br> хранится в вашем личном кабинете. </p>
+												А ещё мы запустили платформу для наших <br> курсов.
+												Теперь все уроки и домашки будут <br> хранится в
+												вашем личном кабинете. </p>
 
 											<p
 												style="color: #fff;text-align: center;margin-bottom: 20px;font-family: sans-serif;font-size: 0.9375rem;font-weight: normal;margin: 0;">
-												<a href="https://forum.cha.ru/amo/speakers/" style="background-color:#aff800;border-radius:9px;color:#000;display:inline-block;font-family:sans-serif;font-size:11px;line-height:36px;text-align:center;text-decoration:none;width:153px;max-width: 100%; -webkit-text-size-adjust:none;">Хочу увидеть</a>
+												<a href="https://forum.cha.ru/amo/speakers/"
+													style="background-color:#aff800;border-radius:9px;color:#000;display:inline-block;font-family:sans-serif;font-size:11px;line-height:36px;text-align:center;text-decoration:none;width:153px;max-width: 100%; -webkit-text-size-adjust:none;">Хочу
+													увидеть</a>
 											</p>
 										</td>
 									</tr>
@@ -522,19 +542,21 @@
 															<tr>
 																<td
 																	style="-webkit-font-smoothing:subpixel-antialiased;padding-left: 0px;padding-right: 0px;">
-																	
-																	<div style="background-color: #131417; border-radius: 18px;  width: 100%;max-width: 293px;height: 291px; margin: 0 auto;">
-																		<div
-																		href="#"
-																		style="color: #fff;text-decoration: none; display: block; padding-top: 30px;">
-																		<p
-																			style="color: #fff;font-family: sans-serif;font-size: 15px;font-weight: 700;margin: 0; text-align: center; padding: 0 20px; padding-bottom: 60px;">
-																			<img src="https://smmagnat.ru/email-images/text1.png" alt="">
-																		</p>
-																		<img src="https://smmagnat.ru/email-images/img1.png" alt=""
-																		style="border: none;-ms-interpolation-mode: bicubic;max-width: 100%;width: 245px; max-width: 100%; border-radius: 18px;">
 
-																	</div>
+																	<div
+																		style="background-color: #131417; border-radius: 18px;  width: 100%;max-width: 293px;height: 291px; margin: 0 auto;">
+																		<div href="#"
+																			style="color: #fff;text-decoration: none; display: block; padding-top: 30px;">
+																			<p
+																				style="color: #fff;font-family: sans-serif;font-size: 15px;font-weight: 700;margin: 0; text-align: center; padding: 0 20px; padding-bottom: 60px;">
+																				<img src="https://smmagnat.ru/email-images/text1.png"
+																					alt="">
+																			</p>
+																			<img src="https://smmagnat.ru/email-images/img1.png"
+																				alt=""
+																				style="border: none;-ms-interpolation-mode: bicubic;max-width: 100%;width: 245px; max-width: 100%; border-radius: 18px;">
+
+																		</div>
 																	</div>
 																</td>
 															</tr>
@@ -549,24 +571,29 @@
 															<tr>
 																<td
 																	style="-webkit-font-smoothing:subpixel-antialiased;padding-left: 0px;padding-right: 0px;">
-																	
-																	<div style="background-color: #131417; border-radius: 18px; width: 100%;max-width: 293px; height: 291px;margin: 0 auto;">
-																		<div
-																		href="#"
-																		style="color: #fff;text-decoration: none;display: block;padding-left: 46px; padding-top: 30px;">
-																		<p
-																			style="color: #fff;font-family: sans-serif;font-size: 15px;font-weight: 700;margin: 0;margin-bottom: 13px; text-align: left;">
-																			<img src="https://smmagnat.ru/email-images/text2.png" alt="">
-																		</p>
 
-																		<p
-																			style="color: #fff;font-family: sans-serif;font-size: 12px;font-weight: 400;margin: 0;margin-bottom: 13px; text-align: left; ">
-																			Теперь обучение происходит <br> в вашем личном кабинете
-																		</p>
-																		<img src="https://smmagnat.ru/email-images/img2.png" alt=""
-																		style="border: none;-ms-interpolation-mode: bicubic;max-width: 100%;width: 252px; max-width: 100%; border-radius: 18px;">
+																	<div
+																		style="background-color: #131417; border-radius: 18px; width: 100%;max-width: 293px; height: 291px;margin: 0 auto;">
+																		<div href="#"
+																			style="color: #fff;text-decoration: none;display: block;padding-left: 46px; padding-top: 30px;">
+																			<p
+																				style="color: #fff;font-family: sans-serif;font-size: 15px;font-weight: 700;margin: 0;margin-bottom: 13px; text-align: left;">
+																				<img src="https://smmagnat.ru/email-images/text2.png"
+																					alt="">
+																			</p>
 
-																	</div>
+																			<p
+																				style="color: #fff;font-family: sans-serif;font-size: 12px;font-weight: 400;margin: 0;margin-bottom: 13px; text-align: left; ">
+																				Теперь обучение
+																				происходит <br> в
+																				вашем личном
+																				кабинете
+																			</p>
+																			<img src="https://smmagnat.ru/email-images/img2.png"
+																				alt=""
+																				style="border: none;-ms-interpolation-mode: bicubic;max-width: 100%;width: 252px; max-width: 100%; border-radius: 18px;">
+
+																		</div>
 																	</div>
 																</td>
 															</tr>
@@ -579,91 +606,111 @@
 								</table>
 							</td>
 						</tr>
-						
+
 						<tr bgcolor="#ffffff">
 							<td class="wrapper"
 								style="padding: 0 4px 5px;font-family: sans-serif;font-size: 14px;vertical-align: top;box-sizing: border-box;">
-								<div style="background-color: #1840f8;border-radius: 18px; padding: 14px 20px 20px;">
+								<div
+									style="background-color: #1840f8;border-radius: 18px; padding: 14px 20px 20px;">
 									<table border="0" cellpadding="0" cellspacing="0"
-									style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;border-spacing: 0;border: none;">
-									<tr>
-										<td bgcolor="#1840f8" style="width: 65px;height: 65px;">
-											<img src="https://smmagnat.ru/email-images/new.png" alt="" style="width: 100%;display: block;">
-										</td>
-										<td class="context" style="vertical-align: middle;padding-left: 10px; padding-right: 75px;">
-											<p
-												style="color: #fff;font-family: sans-serif;font-size: 20px;font-weight: 700;margin: 0;  text-align: center;">
-												<img src="https://smmagnat.ru/email-images/text3.png" alt=""></p>
-											
+										style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;border-spacing: 0;border: none;">
+										<tr>
+											<td bgcolor="#1840f8" style="width: 65px;height: 65px;">
+												<img src="https://smmagnat.ru/email-images/new.png"
+													alt="" style="width: 100%;display: block;">
+											</td>
+											<td class="context"
+												style="vertical-align: middle;padding-left: 10px; padding-right: 75px;">
 												<p
-												style="color: #fff;font-family: sans-serif;font-size: 12px;font-weight: 400;margin: 0; margin-bottom: 10px;margin-left: auto; text-align: center;">
-												Новый курс</p>
-										</td>
-									</tr>
+													style="color: #fff;font-family: sans-serif;font-size: 20px;font-weight: 700;margin: 0;  text-align: center;">
+													<img src="https://smmagnat.ru/email-images/text3.png"
+														alt=""></p>
+
+												<p
+													style="color: #fff;font-family: sans-serif;font-size: 12px;font-weight: 400;margin: 0; margin-bottom: 10px;margin-left: auto; text-align: center;">
+													Новый курс</p>
+											</td>
+										</tr>
 									</table>
 
 									<table border="0" cellpadding="0" cellspacing="0"
-									style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;border-spacing: 0;border: none;">
-									<tbody>
-										<tr>
-											<td class="two-columns"
-												style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:left; width: 50%;">
-												<div class="column"
-													style=" box-sizing: border-box; padding-top: 12px;-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:276px;text-align:left;vertical-align:top;width:100%;margin-bottom: 4px; padding-right: 15px;">
-													<table width="100%" cellpadding="0"
-														style="border-collapse:collapse">
-														<tbody>
-															<tr>
-																<td
-																	style="-webkit-font-smoothing:subpixel-antialiased;padding-left: 0px;padding-right: 0px;">
-																	
-																	<img src="https://smmagnat.ru/email-images/img3.png" alt=""
-																		style="border: none;-ms-interpolation-mode: bicubic;max-width: 100%;width: 227px; max-width: 100%; border-radius: 18px;">
-																</td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
+										style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;border-spacing: 0;border: none;">
+										<tbody>
+											<tr>
+												<td class="two-columns"
+													style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:left; width: 50%;">
+													<div class="column-min"
+														style=" box-sizing: border-box; padding-top: 12px;-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:276px;text-align:left;vertical-align:top;width:100%;margin-bottom: 4px; padding-right: 15px;">
+														<table width="100%" cellpadding="0"
+															style="border-collapse:collapse">
+															<tbody>
+																<tr>
+																	<td
+																		style="-webkit-font-smoothing:subpixel-antialiased;padding-left: 0px;padding-right: 0px;">
 
-												<div class="column"
-													style="padding-top: 12px;-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:276px;text-align:left;vertical-align:top;width:100%;margin-bottom: 4px;">
-													<table width="100%" cellpadding="0"
-														style="border-collapse:collapse">
-														<tbody>
-															<tr>
-																<td
-																	style="-webkit-font-smoothing:subpixel-antialiased;padding-left: 0px;padding-right: 0px;">
-																	
-																	<div style=" width: 100%;max-width: 278px; margin-top: 11px;">
-																		<p
-																			style="color: #fff;max-width: 235px; font-family: sans-serif;font-size: 12px;font-weight: 400;margin: 0;margin-bottom: 13px; text-align: left; ">
-																			Курс для тех, кто хочет научиться писать.
-																		</p>
+																		<img src="https://smmagnat.ru/email-images/img3.png"
+																			alt=""
+																			style="border: none;-ms-interpolation-mode: bicubic;max-width: 100%;width: 227px; max-width: 100%; border-radius: 18px;">
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
 
-																		<p
-																			style="color: #fff;max-width: 235px; font-family: sans-serif;font-size: 12px;font-weight: 400;margin: 0;margin-bottom: 13px; text-align: left; ">
-																			Да, вот так просто :)
-																		</p>
+													<div class="column-min"
+														style="padding-top: 12px;-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:276px;text-align:left;vertical-align:top;width:100%;margin-bottom: 4px;">
+														<table width="100%" cellpadding="0"
+															style="border-collapse:collapse">
+															<tbody>
+																<tr>
+																	<td
+																		style="-webkit-font-smoothing:subpixel-antialiased;padding-left: 0px;padding-right: 0px;">
 
-																		<p
-																			style="color: #fff;max-width: 235px; font-family: sans-serif;font-size: 12px;font-weight: 400;margin: 0;margin-bottom: 30px; text-align: left; ">
-																			Катя, автор курса сделала новый курс с нуля с учётом своего двухлетнего опыта преподавания и решила расширить тему курса, отвечая на вопрос — как же написать любому человеку что угодно.
-																		</p>
+																		<div
+																			style=" width: 100%;max-width: 278px; margin-top: 11px;">
+																			<p
+																				style="color: #fff;max-width: 235px; font-family: sans-serif;font-size: 12px;font-weight: 400;margin: 0;margin-bottom: 13px; text-align: left; ">
+																				Курс для тех, кто
+																				хочет научиться
+																				писать.
+																			</p>
 
-																		<p
-																			style="color: #fff;text-align: left;font-family: sans-serif;font-size: 0.9375rem;font-weight: normal;margin: 0;">
-																			<a href="https://forum.cha.ru/amo/speakers/" style="background-color:#aff800;border-radius:9px;color:#000;display:inline-block;font-family:sans-serif;font-size:11px;line-height:36px;text-align:center;text-decoration:none;width:153px;max-width: 100%; -webkit-text-size-adjust:none;">Подробнее о курсе</a>
-																		</p>
-																	</div>
-																</td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
-											</td>
-										</tr>
-									</tbody>
-								</table>
+																			<p
+																				style="color: #fff;max-width: 235px; font-family: sans-serif;font-size: 12px;font-weight: 400;margin: 0;margin-bottom: 13px; text-align: left; ">
+																				Да, вот так просто
+																				:)
+																			</p>
+
+																			<p
+																				style="color: #fff;max-width: 235px; font-family: sans-serif;font-size: 12px;font-weight: 400;margin: 0;margin-bottom: 30px; text-align: left; ">
+																				Катя, автор курса
+																				сделала новый курс с
+																				нуля с учётом своего
+																				двухлетнего опыта
+																				преподавания и
+																				решила расширить
+																				тему курса, отвечая
+																				на вопрос — как же
+																				написать любому
+																				человеку что угодно.
+																			</p>
+
+																			<p
+																				style="color: #fff;text-align: left;font-family: sans-serif;font-size: 0.9375rem;font-weight: normal;margin: 0;">
+																				<a href="https://forum.cha.ru/amo/speakers/"
+																					style="background-color:#aff800;border-radius:9px;color:#000;display:inline-block;font-family:sans-serif;font-size:11px;line-height:36px;text-align:center;text-decoration:none;width:153px;max-width: 100%; -webkit-text-size-adjust:none;">Подробнее
+																					о курсе</a>
+																			</p>
+																		</div>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
 							</td>
 						</tr>
@@ -685,41 +732,55 @@
 															<tr>
 																<td
 																	style="-webkit-font-smoothing:subpixel-antialiased;padding-left: 0px;padding-right: 0px;">
-																	
-																	<div style="background-color: #000; border-radius: 18px;  width: 100%;max-width: 293px; margin: 0 auto; height: 301px;">
-																		<div
-																		href="#"
-																		style="color: #fff;text-decoration: none; display: block; padding-left: 46px; padding-top: 30px;">
-																		<p
-																			style="color: #fff;font-family: sans-serif;font-size: 15px;font-weight: 700;margin: 0;margin-bottom: 30px; text-align: left;">
-																			<img src="https://smmagnat.ru/email-images/text4.png" alt="">
-																		</p>
 
-																		<table width="100%" cellpadding="0"
-																			style="border-collapse:collapse">
-																			<tbody>
-																				<tr>
-																					<td style="width: 101px; vertical-align:top;">
-																						<p
-																						style="color: #fff;font-family: sans-serif;font-size: 12px;font-weight: 400;margin: 0;margin-bottom: 15px; text-align: left;">
-																						Полная прозрачность. 
-																						</p>
-			
-																						<p
-																							style="color: #fff;font-family: sans-serif;font-size: 12px;font-weight: 400;margin: 0;margin-bottom: 0px; text-align: left;">
-																							Каждый преподаватель — это действующий профессионал со своим блогом. 
-																						</p>
-																					</td>
+																	<div
+																		style="background-color: #000; border-radius: 18px;  width: 100%;max-width: 293px; margin: 0 auto; height: 301px;">
+																		<div href="#"
+																			style="color: #fff;text-decoration: none; display: block; padding-left: 46px; padding-top: 30px;">
+																			<p
+																				style="color: #fff;font-family: sans-serif;font-size: 15px;font-weight: 700;margin: 0;margin-bottom: 30px; text-align: left;">
+																				<img src="https://smmagnat.ru/email-images/text4.png"
+																					alt="">
+																			</p>
 
-																					<td style="width: 150px;">
-																						<img src="https://smmagnat.ru/email-images/img4.png" alt=""
-																						style="border: none;-ms-interpolation-mode: bicubic;max-width: 100%;width: 150px; max-width: 100%; ">
-				
-																					</td>
-																				</tr>
-																			</tbody>
-																		</table>
-																	</div>
+																			<table width="100%"
+																				cellpadding="0"
+																				style="border-collapse:collapse">
+																				<tbody>
+																					<tr>
+																						<td
+																							style="width: 101px; vertical-align:top;">
+																							<p
+																								style="color: #fff;font-family: sans-serif;font-size: 12px;font-weight: 400;margin: 0;margin-bottom: 15px; text-align: left;">
+																								Полная
+																								прозрачность.
+																							</p>
+
+																							<p
+																								style="color: #fff;font-family: sans-serif;font-size: 12px;font-weight: 400;margin: 0;margin-bottom: 0px; text-align: left;">
+																								Каждый
+																								преподаватель
+																								—
+																								это
+																								действующий
+																								профессионал
+																								со
+																								своим
+																								блогом.
+																							</p>
+																						</td>
+
+																						<td
+																							style="width: 150px;">
+																							<img src="https://smmagnat.ru/email-images/img4.png"
+																								alt=""
+																								style="border: none;-ms-interpolation-mode: bicubic;max-width: 100%;width: 150px; max-width: 100%; ">
+
+																						</td>
+																					</tr>
+																				</tbody>
+																			</table>
+																		</div>
 																	</div>
 																</td>
 															</tr>
@@ -728,42 +789,49 @@
 												</div>
 
 												<div class="column"
-												style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:293px;text-align:left;vertical-align:top;width:100%;margin-bottom: 5px;padding-left: 3px;">
-												<table width="100%" cellpadding="0"
-													style="border-collapse:collapse">
-													<tbody>
-														<tr>
-															<td
-																style="-webkit-font-smoothing:subpixel-antialiased;padding-left: 0px;padding-right: 0px;">
-																
-																<div style="background-color: #131417; border-radius: 18px; width: 100%;max-width: 293px; margin: 0 auto; height: 301px;">
+													style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:293px;text-align:left;vertical-align:top;width:100%;margin-bottom: 5px;padding-left: 3px;">
+													<table width="100%" cellpadding="0"
+														style="border-collapse:collapse">
+														<tbody>
+															<tr>
+																<td
+																	style="-webkit-font-smoothing:subpixel-antialiased;padding-left: 0px;padding-right: 0px;">
+
 																	<div
-																	href="#"
-																	style="color: #fff;text-decoration: none;display: block;padding-left: 42px; padding-right: 10px; padding-bottom: 33px; padding-top: 30px;">
-																	<p
-																		style="color: #fff;font-family: sans-serif;font-size: 15px;font-weight: 700;margin: 0;margin-bottom: 46px; text-align: left;">
-																		<img src="https://smmagnat.ru/email-images/text5.png" alt="">
-																	</p>
+																		style="background-color: #131417; border-radius: 18px; width: 100%;max-width: 293px; margin: 0 auto; height: 301px;">
+																		<div href="#"
+																			style="color: #fff;text-decoration: none;display: block;padding-left: 42px; padding-right: 10px; padding-bottom: 33px; padding-top: 30px;">
+																			<p
+																				style="color: #fff;font-family: sans-serif;font-size: 15px;font-weight: 700;margin: 0;margin-bottom: 46px; text-align: left;">
+																				<img src="https://smmagnat.ru/email-images/text5.png"
+																					alt="">
+																			</p>
 
-																	<p
-																		style="color: #fff;font-family: sans-serif;font-size: 12px;font-weight: 400;margin: 0;margin-bottom: 13px; text-align: left; ">
-																		Возможность получить или оставить вакансию для наших выпускников. 
-																	</p>
+																			<p
+																				style="color: #fff;font-family: sans-serif;font-size: 12px;font-weight: 400;margin: 0;margin-bottom: 13px; text-align: left; ">
+																				Возможность получить
+																				или оставить
+																				вакансию для наших
+																				выпускников.
+																			</p>
 
-																	<p
-																		style="color: #fff;font-family: sans-serif;font-size: 12px;font-weight: 400;margin: 0;margin-bottom: 38px; text-align: left; ">
-																		Для этого теперь есть отдельная форма на сайте.
-																	</p>
-																	<img src="https://smmagnat.ru/email-images/WORK.png" alt=""
-																	style="border: none;-ms-interpolation-mode: bicubic;max-width: 100%;width: 200px; max-width: 100%;">
+																			<p
+																				style="color: #fff;font-family: sans-serif;font-size: 12px;font-weight: 400;margin: 0;margin-bottom: 38px; text-align: left; ">
+																				Для этого теперь
+																				есть отдельная форма
+																				на сайте.
+																			</p>
+																			<img src="https://smmagnat.ru/email-images/WORK.png"
+																				alt=""
+																				style="border: none;-ms-interpolation-mode: bicubic;max-width: 100%;width: 200px; max-width: 100%;">
 
-																</div>
-																</div>
-															</td>
-														</tr>
-													</tbody>
-												</table>
-											</div>
+																		</div>
+																	</div>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
 											</td>
 										</tr>
 									</tbody>
@@ -774,81 +842,96 @@
 						<tr bgcolor="#ffffff">
 							<td class="wrapper"
 								style="padding: 0 4px 5px;font-family: sans-serif;font-size: 14px;vertical-align: top;box-sizing: border-box;">
-								<div style="background-color: #c15dd5;border-radius: 18px; padding: 14px 20px 20px 38px;">
+								<div
+									style="background-color: #c15dd5;border-radius: 18px; padding: 14px 20px 20px 38px;">
 									<table border="0" cellpadding="0" cellspacing="0"
-									style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;border-spacing: 0;border: none;">
-									<tr>
-										<td bgcolor="#c15dd5" style="width: 65px;height: 65px;">
-											<img src="https://smmagnat.ru/email-images/new.png" alt="" style="width: 100%;display: block;">
-										</td>
-										<td class="context" style="vertical-align: middle;padding-left: 10px; padding-right: 75px;">
-											<p
-												style="color: #fff;font-family: sans-serif;font-size: 20px;font-weight: 700;margin: 0; text-align: center;">
-												<img src="https://smmagnat.ru/email-images/text6.png" alt=""></p>
-											
+										style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;border-spacing: 0;border: none;">
+										<tr>
+											<td bgcolor="#c15dd5" style="width: 65px;height: 65px;">
+												<img src="https://smmagnat.ru/email-images/new.png"
+													alt="" style="width: 100%;display: block;">
+											</td>
+											<td class="context"
+												style="vertical-align: middle;padding-left: 10px; padding-right: 75px;">
 												<p
-												style="color: #fff;font-family: sans-serif;font-size: 12px;font-weight: 400;margin: 0; margin-bottom: 10px;margin-left: auto; text-align: center;">
-												Новый курс</p>
-										</td>
-									</tr>
+													style="color: #fff;font-family: sans-serif;font-size: 20px;font-weight: 700;margin: 0; text-align: center;">
+													<img src="https://smmagnat.ru/email-images/text6.png"
+														alt=""></p>
+
+												<p
+													style="color: #fff;font-family: sans-serif;font-size: 12px;font-weight: 400;margin: 0; margin-bottom: 10px;margin-left: auto; text-align: center;">
+													Новый курс</p>
+											</td>
+										</tr>
 									</table>
 
 									<table border="0" cellpadding="0" cellspacing="0"
-									style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;border-spacing: 0;border: none;">
-									<tbody>
-										<tr>
-											<td class="two-columns"
-												style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:left; width: 50%;">
-												<div class="column"
-													style="box-sizing: border-box; padding-top: 12px;padding-right: 15px; -webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:267px;text-align:left;vertical-align:top;width:100%;">
-													<table width="100%" cellpadding="0"
-														style="border-collapse:collapse">
-														<tbody>
-															<tr>
-																<td
-																	style="-webkit-font-smoothing:subpixel-antialiased;padding-left: 0px;padding-right: 0px;">
-																	
-																	<img src="https://smmagnat.ru/email-images/img5.png" alt=""
-																		style="border: none;-ms-interpolation-mode: bicubic;max-width: 100%;width: 227px; max-width: 100%; border-radius: 18px;">
-																</td>
-															</tr>
-														</tbody>
-													</table>
-												</div>
+										style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;border-spacing: 0;border: none;">
+										<tbody>
+											<tr>
+												<td class="two-columns"
+													style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:left; width: 50%;">
+													<div class="column-extra-min"
+														style="box-sizing: border-box; padding-top: 12px;padding-right: 15px; -webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:267px;text-align:left;vertical-align:top;width:100%;">
+														<table width="100%" cellpadding="0"
+															style="border-collapse:collapse">
+															<tbody>
+																<tr>
+																	<td
+																		style="-webkit-font-smoothing:subpixel-antialiased;padding-left: 0px;padding-right: 0px;">
 
-												<div class="column"
-												style="padding-top: 12px;-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:267px;text-align:left;vertical-align:top;width:100%;">
-												<table width="100%" cellpadding="0"
-													style="border-collapse:collapse">
-													<tbody>
-														<tr>
-															<td
-																style="-webkit-font-smoothing:subpixel-antialiased;padding-left: 0px;padding-right: 0px;">
-																
-																<div style=" width: 100%;max-width: 278px; margin-top: 30px;">
+																		<img src="https://smmagnat.ru/email-images/img5.png"
+																			alt=""
+																			style="border: none;-ms-interpolation-mode: bicubic;max-width: 100%;width: 227px; max-width: 100%; border-radius: 18px;">
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
 
-																	<p
-																		style="color: #fff;max-width: 235px; font-family: sans-serif;font-size: 12px;font-weight: 400;margin: 0;margin-bottom: 40px; text-align: left; ">
-																		Курс от нашего контекстолога с опытом более 4 лет, который освоил бюджета своих клиентов более 50 млн. руб. 
+													<div class="column-extra-min"
+														style="padding-top: 12px;-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:267px;text-align:left;vertical-align:top;width:100%;">
+														<table width="100%" cellpadding="0"
+															style="border-collapse:collapse">
+															<tbody>
+																<tr>
+																	<td
+																		style="-webkit-font-smoothing:subpixel-antialiased;padding-left: 0px;padding-right: 0px;">
 
-Кстати, вот его инстаграм ;)
-																	</p>
+																		<div
+																			style=" width: 100%;max-width: 278px; margin-top: 30px;">
 
-																	<p
-																		style="color: #fff;text-align: left;font-family: sans-serif;font-size: 0.9375rem;font-weight: normal;margin: 0;">
-																		<a href="https://forum.cha.ru/amo/speakers/" style="background-color:#aff800;border-radius:9px;color:#000;display:inline-block;font-family:sans-serif;font-size:11px;line-height:36px;text-align:center;text-decoration:none;width:153px;max-width: 100%; -webkit-text-size-adjust:none;">Подробнее о курсе</a>
-																		
-																	</p>
-																</div>
-															</td>
-														</tr>
-													</tbody>
-												</table>
-											</div>
-											</td>
-										</tr>
-									</tbody>
-								</table>
+																			<p
+																				style="color: #fff;max-width: 235px; font-family: sans-serif;font-size: 12px;font-weight: 400;margin: 0;margin-bottom: 40px; text-align: left; ">
+																				Курс от нашего
+																				контекстолога с
+																				опытом более 4 лет,
+																				который освоил
+																				бюджета своих
+																				клиентов более 50
+																				млн. руб.
+
+																				Кстати, вот его
+																				инстаграм ;)
+																			</p>
+
+																			<p
+																				style="color: #fff;text-align: left;font-family: sans-serif;font-size: 0.9375rem;font-weight: normal;margin: 0;">
+																				<a href="https://forum.cha.ru/amo/speakers/"
+																					style="background-color:#aff800;border-radius:9px;color:#000;display:inline-block;font-family:sans-serif;font-size:11px;line-height:36px;text-align:center;text-decoration:none;width:153px;max-width: 100%; -webkit-text-size-adjust:none;">Подробнее
+																					о курсе</a>
+
+																			</p>
+																		</div>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
 							</td>
 						</tr>
@@ -864,7 +947,9 @@
 											style="padding: 0;font-family: sans-serif;font-size: 14px;vertical-align: top;">
 											<p
 												style="color: #fff;text-align: center;display: block;font-family: sans-serif;font-size: 0.9375rem;font-weight: normal;margin: 0; margin-bottom: 45px;">
-												<a href="https://forum.cha.ru/amo/speakers/" style="background-color:#aff800;border-radius:9px;color:#000;display:inline-block;font-family:sans-serif;font-size:11px;line-height:36px;text-align:center;text-decoration:none;width:214px;max-width: 100%; -webkit-text-size-adjust:none;">Ну теперь точно показывайте</a>
+												<a href="https://forum.cha.ru/amo/speakers/"
+													style="background-color:#aff800;border-radius:9px;color:#000;display:inline-block;font-family:sans-serif;font-size:11px;line-height:36px;text-align:center;text-decoration:none;width:214px;max-width: 100%; -webkit-text-size-adjust:none;">Ну
+													теперь точно показывайте</a>
 											</p>
 
 											<p
@@ -883,25 +968,27 @@
 											</p>
 
 											<table border="0" cellpadding="0" cellspacing="0"
-									style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;border-spacing: 0;border: none;">
-											<tr>
-												<td style="vertical-align: middle;">
-													<p style="color: #efefef;text-align: left;display: block;font-family: sans-serif;font-size: 11px;font-weight: normal;margin: 0;">tutor © 2021</p>
-												</td>
+												style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;border-spacing: 0;border: none;">
+												<tr>
+													<td style="vertical-align: middle;">
+														<p
+															style="color: #efefef;text-align: left;display: block;font-family: sans-serif;font-size: 11px;font-weight: normal;margin: 0;">
+															tutor © 2021</p>
+													</td>
 
-												<td style="width: 13px; vertical-align: middle;">
-													<p
-												style="color: #fff;text-align: center;font-family: sans-serif;font-size: 0.9375rem;font-weight: normal;margin: 0;">
-												<a target="_blank" href="#"
-													style="color: #0065b5;text-decoration: underline; width: 13px;display: block;
+													<td
+														style="width: 13px; vertical-align: middle;">
+														<p
+															style="color: #fff;text-align: center;font-family: sans-serif;font-size: 0.9375rem;font-weight: normal;margin: 0;">
+															<a target="_blank" href="#" style="color: #0065b5;text-decoration: underline; width: 13px;display: block;
 													height: 13px;">
-													<img src="https://smmagnat.ru/email-images/inst.png"
-														alt=""
-														style="max-width:105px;border: none;-ms-interpolation-mode: bicubic;">
-												</a>
-											</p>
-												</td>
-											</tr>
+																<img src="https://smmagnat.ru/email-images/inst.png"
+																	alt=""
+																	style="max-width:105px;border: none;-ms-interpolation-mode: bicubic;">
+															</a>
+														</p>
+													</td>
+												</tr>
 											</table>
 										</td>
 									</tr>
@@ -910,10 +997,10 @@
 						</tr>
 
 
-	<!-- END MAIN CONTENT AREA -->
+						<!-- END MAIN CONTENT AREA -->
 					</table>
 
-	<!-- END CENTERED WHITE CONTAINER -->
+					<!-- END CENTERED WHITE CONTAINER -->
 				</div>
 			</td>
 		</tr>
