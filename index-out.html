@@ -681,10 +681,23 @@
 			font-size: 0 !important;
 		}
 
-		.two-columns .column {
+		@media screen and (min-width:500px){
+			.two-columns .item {
 			box-sizing: border-box;
 			max-width: 293px !important;
+			}
+
+			.mobile-item{
+				padding-left: 0!important;
+			}
+
+			.mobile-item p{
+				text-align: center!important;
+				padding: 0 20px!important;
+			}
 		}
+
+		
 
 		.two-columns .column-min {
 			box-sizing: border-box;
@@ -724,9 +737,14 @@
 					<tr>
 						<td>
 							<a target="_blank" href="#"
-								style="color: #0065b5;text-decoration: underline;"><img
+								style="color: #0065b5;text-decoration: underline;">
+								<p
+											style="color: #000000;font-family: sans-serif;font-size: 12px;font-weight: 400;margin: 0;text-align: center;">
+											<img
 									src="https://smmagnat.ru/email-images/header.png"
-									style="border: none;-ms-interpolation-mode: bicubic;max-width: 100%;display: block;"></a></span>
+									style="border: none;-ms-interpolation-mode: bicubic;max-width: 100%;display: block;"></p>
+								
+								</a>
 						</td>
 					</tr>
 					<tr>
@@ -782,14 +800,19 @@
 																		style="-webkit-font-smoothing:subpixel-antialiased;padding-left: 0px;padding-right: 0px;">
 
 																		<p
-																			style="color: #fff;font-family: sans-serif;font-size: 15px;font-weight: 700;margin: 0; text-align: center; padding: 0 20px; padding-bottom: 60px;padding-top: 15px;">
+																			style="color: #fff;font-family: sans-serif;font-size: 15px;font-weight: 700;margin: 0; text-align: center; padding: 0 20px; padding-bottom: 60px;padding-top: 15px; margin-bottom:20px;">
 																			<img src="https://smmagnat.ru/email-images/text1.png"
 																				alt="">
 																		</p>
-																		<img src="https://smmagnat.ru/email-images/img1.png"
+
+																			<p
+																			style="color: #fff;font-family: sans-serif;font-size: 15px;font-weight: 700;margin: 0; text-align: center; padding: 0 20px; padding-bottom: 60px;padding-top: 15px;">
+																			<img src="https://smmagnat.ru/email-images/img1.png"
 																			alt=""
 																			style="border: none;-ms-interpolation-mode: bicubic;max-width: 100%;width: 245px; max-width: 100%; border-radius: 18px;padding-right: 50px;">
 
+																		</p>
+																		
 																	</td>
 																</tr>
 															</tbody>
@@ -809,23 +832,28 @@
 
 
 																		<p
-																			style="color: #fff;font-family: sans-serif;font-size: 15px;font-weight: 700;margin: 0;margin-bottom: 13px; text-align: left;padding-left: 20px;padding-top: 15px;">
+																			style="color: #fff;font-family: sans-serif;font-size: 15px;font-weight: 700;margin: 0;margin-bottom: 13px; text-align: center;padding-left: 20px;padding-top: 15px;">
 																			<img src="https://smmagnat.ru/email-images/text2.png"
 																				alt="">
 																		</p>
 
 																		<p
-																			style="color: #fff;font-family: sans-serif;font-size: 12px;font-weight: 400;margin: 0;margin-bottom: 13px; text-align: left; ">
+																			style="color: #fff;font-family: sans-serif;font-size: 12px;font-weight: 400;margin: 0;margin-bottom: 13px; text-align: center; ">
 																			Теперь обучение
 																			происходит <br>
 																			в
 																			вашем личном
 																			кабинете
 																		</p>
-																		<img src="https://smmagnat.ru/email-images/img2.png"
+
+																		<p
+																			style="color: #fff;font-family: sans-serif;font-size: 15px;font-weight: 700;margin: 0;margin-bottom: 13px; text-align: center;padding-left: 20px;padding-top: 15px;">
+																			<img src="https://smmagnat.ru/email-images/img2.png"
 																			alt=""
 																			style="border: none;-ms-interpolation-mode: bicubic;max-width: 100%;width: 252px; max-width: 100%; border-radius: 18px;padding-left: 40px;">
 
+																		</p>
+																		
 																	</td>
 																</tr>
 															</tbody>
@@ -1268,8 +1296,8 @@
 													<tr>
 														<td class="two-columns"
 															style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:left; width: 50%; ">
-															<div class="column"
-																style=" -webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:293px;text-align:left;vertical-align:top;width:100%;margin-bottom: 5px; padding-right: 3px;">
+															<div class="column item"
+																style=" -webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:100%;text-align:left;vertical-align:top;width:100%;margin-bottom: 5px; padding-right: 3px;">
 																<table width="100%" cellpadding="0"
 																	style="border-collapse:collapse">
 																	<tbody>
@@ -1278,11 +1306,11 @@
 																				style="-webkit-font-smoothing:subpixel-antialiased;padding-left: 0px;padding-right: 0px;">
 
 																				<div
-																					style="background-color: #131417; border-radius: 18px;  width: 100%;max-width: 293px;height: 291px; margin: 0 auto;">
-																					<div href="#"
-																						style="color: #fff;text-decoration: none; display: block; padding-top: 30px;">
+																					style="background-color: #131417; border-radius: 18px;  width: 100%;max-width: 100%;height: 291px; margin: 0 auto;">
+																					<div href="#" class="mobile-item"
+																						style="color: #fff;text-decoration: none; display: block; padding-top: 30px; padding-left: 46px; text-align: left;">
 																						<p
-																							style="color: #fff;font-family: sans-serif;font-size: 15px;font-weight: 700;margin: 0; text-align: center; padding: 0 20px; padding-bottom: 60px;">
+																							style="color: #fff;font-family: sans-serif;font-size: 15px;font-weight: 700;margin: 0; text-align:left; padding: 0 20px;padding-left: 0; padding-bottom: 60px;">
 																							<img src="https://smmagnat.ru/email-images/text1.png"
 																								alt="">
 																						</p>
@@ -1297,8 +1325,8 @@
 																	</tbody>
 																</table>
 															</div>
-															<div class="column"
-																style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:293px;text-align:left;vertical-align:top;width:100%;margin-bottom: 5px;padding-left: 3px;">
+															<div class="column item"
+																style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:100%;text-align:left;vertical-align:top;width:100%;margin-bottom: 5px;padding-left: 3px;">
 																<table width="100%" cellpadding="0"
 																	style="border-collapse:collapse">
 																	<tbody>
@@ -1307,9 +1335,9 @@
 																				style="-webkit-font-smoothing:subpixel-antialiased;padding-left: 0px;padding-right: 0px;">
 
 																				<div
-																					style="background-color: #131417; border-radius: 18px; width: 100%;max-width: 293px; height: 291px;margin: 0 auto;">
+																					style="background-color: #131417; border-radius: 18px; width: 100%;max-width: 100%; height: 291px;margin: 0 auto;">
 																					<div href="#"
-																						style="color: #fff;text-decoration: none;display: block;padding-left: 46px; padding-top: 30px;">
+																						style="color: #fff;text-decoration: none;display: block;padding-left: 46px; padding-top: 30px; text-align: left;">
 																						<p
 																							style="color: #fff;font-family: sans-serif;font-size: 15px;font-weight: 700;margin: 0;margin-bottom: 13px; text-align: left;">
 																							<img src="https://smmagnat.ru/email-images/text2.png"
@@ -1486,8 +1514,8 @@
 													<tr>
 														<td class="two-columns"
 															style="-webkit-font-smoothing:subpixel-antialiased;font-size:0;text-align:left; width: 50%;">
-															<div class="column"
-																style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:293px;text-align:left;vertical-align:top;width:100%;margin-bottom: 5px;padding-right: 3px;">
+															<div class="column item"
+																style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:100%;text-align:left;vertical-align:top;width:100%;margin-bottom: 5px;padding-right: 3px;">
 																<table width="100%" cellpadding="0"
 																	style="border-collapse:collapse">
 																	<tbody>
@@ -1496,7 +1524,7 @@
 																				style="-webkit-font-smoothing:subpixel-antialiased;padding-left: 0px;padding-right: 0px;">
 
 																				<div
-																					style="background-color: #000; border-radius: 18px;  width: 100%;max-width: 293px; margin: 0 auto; height: 301px;">
+																					style="background-color: #000; border-radius: 18px;  width: 100%;max-width: 100%; margin: 0 auto; height: 301px;">
 																					<div href="#"
 																						style="color: #fff;text-decoration: none; display: block; padding-left: 46px; padding-top: 30px;">
 																						<p
@@ -1551,8 +1579,8 @@
 																</table>
 															</div>
 
-															<div class="column"
-																style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:293px;text-align:left;vertical-align:top;width:100%;margin-bottom: 5px;padding-left: 3px;">
+															<div class="column item"
+																style="-webkit-font-smoothing:subpixel-antialiased;display:inline-block;font-size:14px;max-width:100%;text-align:left;vertical-align:top;width:100%;margin-bottom: 5px;padding-left: 3px;">
 																<table width="100%" cellpadding="0"
 																	style="border-collapse:collapse">
 																	<tbody>
@@ -1561,7 +1589,7 @@
 																				style="-webkit-font-smoothing:subpixel-antialiased;padding-left: 0px;padding-right: 0px;">
 
 																				<div
-																					style="background-color: #131417; border-radius: 18px; width: 100%;max-width: 293px; margin: 0 auto; height: 301px;">
+																					style="background-color: #131417; border-radius: 18px; width: 100%;max-width: 100%; margin: 0 auto; height: 301px;">
 																					<div href="#"
 																						style="color: #fff;text-decoration: none;display: block;padding-left: 42px; padding-right: 10px; padding-bottom: 33px; padding-top: 30px;">
 																						<p
